@@ -1,0 +1,10 @@
+:root {
+  --black: #121417;
+  --green: #4dc274;
+  --green-light: #d4fde1;
+  --green-gradient: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+  --gray: #f3f5f6;
+  --white: #ffffff;
+  --transition-timing: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --main-font-family: 'Manrope', sans-serif;
+}
