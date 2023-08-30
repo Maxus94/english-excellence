@@ -126,6 +126,21 @@
     gap: 18px;
 }
 
+.logo {
+    color: var(--white);
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.logo .highlighted {
+    color: var(--green);
+}
+
 .policies-link {
     color: rgba(255, 255, 255, 0.60);
     font-family: var(--main-font-family);
@@ -159,6 +174,10 @@
 
     .footer-info {
         padding-bottom: 110px;
+    }
+
+    .logo {
+        margin-bottom: 32px;
     }
 }
 
