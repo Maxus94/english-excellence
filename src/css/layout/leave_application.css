@@ -17,7 +17,7 @@
   }
 }
 
-.application-title {
+.section-title {
   color: var(--black);
   text-align: center;
   font-size: 32px;
@@ -28,7 +28,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .application-title {
+  .section-title {
     font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
@@ -36,11 +36,11 @@
   }
 }
 
-.application-title span {
+.section-title-accent {
   position: relative;
 }
 
-.application-title span::after {
+.section-title-accent::after {
   position: absolute;
   bottom: 0;
   z-index: -999;
@@ -54,12 +54,12 @@
 }
 
 @media screen and (min-width: 768px) {
-  .application-title span::after {
+  .section-title-accent::after {
     height: 20px;
   }
 }
 
-.application-subtitle {
+.section-text {
   color: rgba(18, 20, 23, 0.8);
   text-align: center;
   font-size: 14px;
@@ -68,7 +68,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .application-subtitle {
+  .section-text {
     font-size: 18px;
     line-height: 1.67;
     margin-bottom: 64px;
@@ -90,6 +90,7 @@
 }
 
 .application-image-wrapper {
+  box-sizing: border-box;
   border-radius: 30px;
   background: var(--green);
   width: 492px;
