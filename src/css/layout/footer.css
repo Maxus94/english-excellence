@@ -126,7 +126,7 @@
     gap: 18px;
 }
 
-.logo {
+.footer .logo {
     color: var(--white);
     font-family: var(--main-font-family);
     font-size: 20px;
@@ -135,10 +135,6 @@
     line-height: normal;
     display: block;
     margin-bottom: 20px;
-}
-
-.logo .highlighted {
-    color: var(--green);
 }
 
 .policies-link {
@@ -176,7 +172,7 @@
         padding-bottom: 110px;
     }
 
-    .logo {
+    .footer .logo {
         margin-bottom: 32px;
     }
 }
