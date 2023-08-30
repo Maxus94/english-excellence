@@ -14,12 +14,37 @@
     align-items: center;
 }
 
+.teacher-picture{
+    margin-bottom: 16px;    
+}
+
 .teacher-description{
     text-align: center;
+    line-height: 1.71;
 }
 
 .teachers-list{
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+
+@media screen and (min-width: 768px){
+    .teachers-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    .teacher-card{
+        width: calc((100% - 32px) / 2);
+    }   
+}
+
+@media screen and (min-width: 1280px){
+    .teachers-list{
+         flex-wrap: nowrap;        
+    }
+    .teacher-card{
+        width: calc((100% - 32px) / 4);
+    }
 }
