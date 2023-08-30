@@ -10,29 +10,33 @@
     height: 100%;
     background-color:rgba(18, 20, 23, 0.40);
     z-index: 99;
-    transform: translateX(0%);
-    transition: opacity var(--transition-timing), visibility var(--transition-timing), transform var( --transition-timing);
+    transition: opacity var(--transition-timing), visibility var(--transition-timing)   ;
 }
 
 .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+} 
+
+.is-hidden .mobile-menu {
     transform: translateX(100%);
-}       
+}
 
 .mobile-menu {
     position: absolute;
+    transform: translateX(0%);
     top: 0;
     right: 0;
     z-index: 999;
     width: 240px;
-    height: 100%;
-    padding: 248px 0 20px 0;
+    height: 100vh;
+    padding-bottom: 20px;
     background-color: var(--green);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform var( --transition-timing);
 }
 
 .mobile-menu.is-open {
@@ -62,18 +66,32 @@
  .mobile-menu-close-btn:hover .close-mobile-menu-icon {
     stroke: var(--green-light);
  }
+.mobile-menu-nav-wrap {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
 
  .mobile-menu-nav-list {
     color: var(--white);
-    font-family: Manrope;
     font-size: 14px;
-    font-style: normal;
     font-weight: 600;
     line-height: 1.33;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
+ }
+ 
+ .mobile-menu-nav-link:hover {
+    transition: opacity var(--transition-timing);
+ }
+
+ .mobile-menu-nav-link:hover,
+ .mobile-menu-nav-link:focus {
+color: var(--green-light)
  }
 
  .mobile-menu-social-list {
@@ -112,3 +130,26 @@
 .mobile-menu-social-link:focus .mobile-menu-social-icon  {
     fill: var(--green-light);
 }
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        width: 384px;
+        padding-bottom: 20px;
+    }
+
+    .mobile-menu-close-btn {
+        right: 32px;
+        width: 40px;
+        height: 40px;
+    }
+     .close-mobile-menu-icon {
+        width: 40px;
+        height: 40px;
+     }
+
+     .mobile-menu-social-item {
+        width: 44px;
+        height: 44px;
+     }
+
+    }
