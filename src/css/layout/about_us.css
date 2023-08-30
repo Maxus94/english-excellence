@@ -1,0 +1,60 @@
+.about-us {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.about-us-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    counter-reset: item;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.about-us-item-text {
+    margin-top: 16px;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+}
+
+.about-us-item {
+    flex-basis: 100%;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: var(--gray);
+}
+
+.about-us-item::before {
+    content: counter(item, decimal-leading-zero);
+    counter-increment: item;
+    color: var(--green);
+    font-weight: 700;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+
+.about-us-img {
+    height: 313px;
+    width: 100%;
+    border-radius: 16px;
+    background-color: var(--green);
+    background-image: url(../../img/about_us/memoji.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 255px;
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1280px) {
+
+}
