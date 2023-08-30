@@ -6,19 +6,18 @@
 
 .address {
     font-style: normal;
+    margin-bottom: 40px;
 }
 
 .address-list {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-bottom: 40px;
 }
 
 .address-list-link {
     color: var(--white);
     font-size: 14px;
-    font-style: normal;
     font-weight: 600;
     line-height: 1.29;
 }
@@ -43,7 +42,6 @@
 .footer-nav-link {
     color: var(--white);
     font-size: 14px;
-    font-style: normal;
     font-weight: 600;
     line-height: 1.29;
     position: relative;
@@ -72,7 +70,6 @@
     justify-content: center;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.10);
-    width: 28px;
 }
 
 .footer-social-icon {
@@ -109,10 +106,7 @@
 .policies-info {
     width: 100%;
     color: rgba(255, 255, 255, 0.60);
-    font-family: var(--main-font-family);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;   
+    font-size: 14px; 
     line-height: 1.29;
     letter-spacing: -0.02em;
 }
@@ -127,17 +121,13 @@
     font-family: var(--main-font-family);
     font-size: 20px;
     font-weight: 700;
-    line-height: normal;
     display: block;
     margin-bottom: 20px;
 }
 
 .policies-link {
     color: rgba(255, 255, 255, 0.60);
-    font-family: var(--main-font-family);
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;   
     line-height: 1.29;
     letter-spacing: -0.02em;
 }
@@ -147,6 +137,10 @@
     .footer {
         padding-top: 32px;
         padding-bottom: 16px;
+    }
+
+    .address {
+        margin-bottom: 0;
     }
 
     .footer-nav {
