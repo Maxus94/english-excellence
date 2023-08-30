@@ -126,6 +126,7 @@
     gap: 18px;
 }
 
+<<<<<<< HEAD
 .logo {
     color: var(--white);
     font-family: var(--main-font-family);
@@ -141,6 +142,8 @@
     color: var(--green);
 }
 
+=======
+>>>>>>> fd3e28fde2550b6eecc940d83017f2d5fdf2deeb
 .policies-link {
     color: rgba(255, 255, 255, 0.60);
     font-family: var(--main-font-family);
@@ -175,10 +178,13 @@
     .footer-info {
         padding-bottom: 110px;
     }
+<<<<<<< HEAD
 
     .logo {
         margin-bottom: 32px;
     }
+=======
+>>>>>>> fd3e28fde2550b6eecc940d83017f2d5fdf2deeb
 }
 
 @media (min-width: 1280px) {
