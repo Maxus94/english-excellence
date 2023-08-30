@@ -6,17 +6,10 @@
   </p>
   <div class="application-content-wrap">
     <div class="application-image-wrapper">
-      <img
-        class="application-image"
-        srcset="
-          ../img/leave_application/application.png    1x,
-          ../img/leave_application/application@2x.png 2x
-        "
-        src="../img/leave_application/application.png"
-        alt="Add an application"
-        width="492"
-        height="392"
-      />
+      <img class="application-image" srcset="
+          ./img/leave_application/application.png    1x,
+          ./img/leave_application/application@2x.png 2x
+        " src="./img/leave_application/application.png" alt="Add an application" width="492" height="392" />
       <p class="application-image-title">1000</p>
       <p class="application-image-descr">
         of our online English language lessons! This journey has been full of
@@ -26,87 +19,38 @@
     </div>
     <form class="application-form">
       <label class="application-label">
-        <input
-          class="application-input-field"
-          pattern="[a-zA-Zа-яА-Я]+ ?[a-zA-Zа-яА-Я]+"
-          type="text"
+        <input class="application-input-field" pattern="[a-zA-Zа-яА-Я]+ ?[a-zA-Zа-яА-Я]+" type="text"
           title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer"
-          placeholder="Name"
-          required
-        />
+          placeholder="Name" required />
       </label>
-      <label class="application-label"
-        ><input
-          class="application-input-field"
-          pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w\w+)+$/"
-          type="email"
-          placeholder="Email"
-          required
-      /></label>
-      <label class="application-label"
-        ><input
-          class="application-input-field"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-          type="tel"
-          title="Phone number must be in format 000-000-0000"
-          placeholder="Phone"
-          required
-      /></label>
+      <label class="application-label"><input class="application-input-field"
+          pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w\w+)+$/" type="email" placeholder="Email" required /></label>
+      <label class="application-label"><input class="application-input-field" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          type="tel" title="Phone number must be in format 000-000-0000" placeholder="Phone" required /></label>
       <label class="application-textarea-label">
-        <textarea
-          class="application-textarea-field"
-          name="textarea"
-          placeholder="Comment"
-        ></textarea>
+        <textarea class="application-textarea-field" name="textarea" placeholder="Comment"></textarea>
       </label>
       <p class="application-radio-btn-title">Choose a teacher</p>
       <div class="application-radio-btn-wrap">
-        <input
-          class="application-radio-btn"
-          id="Maria"
-          type="radio"
-          name="teacher"
-          value="Maria"
-          checked
-        />
+        <input class="application-radio-btn" id="Maria" type="radio" name="teacher" value="Maria" checked />
         <label class="application-radio-label" for="Maria">
-          <span></span> Maria</label
-        >
-        <input
-          class="application-radio-btn"
-          id="Artem"
-          type="radio"
-          name="teacher"
-          value="Artem"
-        />
+          <span></span> Maria</label>
+        <input class="application-radio-btn" id="Artem" type="radio" name="teacher" value="Artem" />
         <label class="application-radio-label" for="Artem">
-          <span></span> Artem</label
-        >
-        <input
-          class="application-radio-btn"
-          id="Ilona"
-          type="radio"
-          name="teacher"
-          value="Ilona"
-        />
+          <span></span> Artem</label>
+        <input class="application-radio-btn" id="Ilona" type="radio" name="teacher" value="Ilona" />
         <label class="application-radio-label" for="Ilona">
-          <span></span> Ilona</label
-        >
-        <input
-          class="application-radio-btn"
-          id="Volodymyr"
-          type="radio"
-          name="teacher"
-          value="Volodymyr"
-        />
+          <span></span> Ilona</label>
+        <input class="application-radio-btn" id="Volodymyr" type="radio" name="teacher" value="Volodymyr" />
         <label class="application-radio-label" for="Volodymyr">
-          <span></span> Volodymyr</label
-        >
+          <span></span> Volodymyr</label>
       </div>
       <button class="application-submit-btn" type="submit">Send</button>
       <p class="application-policy">
         By clicking on &#34;Send&#34; button, you agree to our
-        <a href="#">Privacy Policy</a>, and allow Promodo to use this
+        <button type="button" class="application-policy-link" href="#">Privacy Policy</button>, and
+        allow Promodo to
+        use this
         information for marketing purposes.
       </p>
     </form>
