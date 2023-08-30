@@ -2,8 +2,8 @@ body {
   font-family: var(--main-font-family);
   color: var(--black-50-transparent);
   background-color: var(--white);
-  font-size: 14px;
-  line-height: 1.71;
+
+  scroll-behavior: smooth;
 }
 
 .visually-hidden {
@@ -30,14 +30,41 @@ body {
 }
 
 .section-title-accent {
-  color: var(--green-middle);
+  position: relative;
+}
+
+.section-title-accent::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: 2px;
+  right: 0;
+  width: 100%;
+  height: 12px;
+  border-radius: 8px;
+  background-color: var(--green-light);
 }
 
 .section-text {
-  text-align: center;
   margin-bottom: 40px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .btn {
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .section-text {
+    margin-bottom: 64px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
