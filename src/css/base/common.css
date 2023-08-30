@@ -1,7 +1,30 @@
-.btn{
-display: block;
+body {
+  font-family: var(--main-font-family);
+  color: var(--black-50-transparent);
+  background-color: var(--white);
+  font-size: 14px;
+  line-height: 1.71;
 }
 
-.section-title{
-display: block;
+.section-title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--black);
+}
+
+.section-title-accent{
+color: var(--green-middle);
+}
+
+.section-text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: block;
 }
