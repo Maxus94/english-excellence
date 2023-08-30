@@ -325,7 +325,8 @@
   transition: background-color var(--transition-timing);
 }
 
-.application-submit-btn:hover {
+.application-submit-btn:hover,
+.application-submit-btn:focus {
   background-color: #38ae5f;
 }
 
@@ -358,4 +359,10 @@
   background-color: transparent;
   margin: 0;
   padding: 0;
+  transition: color var(--transition-timing);
+}
+
+.application-policy-link:hover,
+.application-policy-link:focus {
+  color: #38ae5f;
 }
