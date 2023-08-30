@@ -19,7 +19,7 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 1.33;
-    letter-spacing: -0.36px;
+    letter-spacing: -0.02em;
 }
 
 .about-us-item {
@@ -37,28 +37,11 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 1.14;
-    letter-spacing: -0.56px;
+    letter-spacing: -0.02em;
 }
 
 .title-about-us {
     text-align: center;
-}
-
-.title-about-us-block {
-    position: relative;
-}
-
-.title-about-us-block::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 39px;
-    height: 12px;
-    border-radius: 8px;
-    background-color: var(--green-middle);
 }
 
 .about-us-img {
