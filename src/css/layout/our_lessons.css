@@ -47,7 +47,8 @@
   border-radius: 12px;
   transition: background-color var(--transition-timing);
 }
-.link-toform-lessons:focus {
+.link-toform-lessons:focus,
+.link-toform-lessons:hover {
   background-color: rgb(56, 174, 95);
 }
 .list-price-lessons {
@@ -60,55 +61,29 @@
   border: 1px solid var(--green);
   border-radius: 16px;
 }
-.item-price-lessons-accent {
-  border-radius: 16px;
-  padding: 40px 20px;
+.item-price-lessons:nth-child(even) {
   background-color: var(--green);
-  border: 1px solid var(--green);
 }
-.title-price-lessons-accent {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.4px;
+.item-price-lessons:nth-child(even) .title-price-lessons {
   color: var(--white);
-  margin-bottom: 16px;
 }
-.price-text-lessons-accent {
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.12;
-  letter-spacing: -0.02em;
+.item-price-lessons:nth-child(even) .price-text-lessons {
   color: var(--white);
-  margin-bottom: 40px;
 }
-.text-about-price-lessons-accent {
-  max-width: 295px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.71;
+.item-price-lessons:nth-child(even) .text-about-price-lessons {
   color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 20px;
 }
-.link-toform-lessons-accent {
-  display: inline-flex;
-  width: 100%;
-  justify-content: center;
-  height: 56px;
-  background-color: transparent;
-  align-items: center;
-  color: var(--white);
+.item-price-lessons:nth-child(even) .link-toform-lessons {
   border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 12px;
   transition: background-color var(--transition-timing),
     color var(--transition-timing);
 }
-.link-toform-lessons-accent:focus {
+.item-price-lessons:nth-child(even) .link-toform-lessons:focus,
+.item-price-lessons:nth-child(even) .link-toform-lessons:hover {
   background-color: var(--white);
   color: var(--green);
 }
+
 /* TABLET////////////////// */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .list-price-lessons {
@@ -118,13 +93,13 @@
     column-gap: 32px;
     row-gap: 32px;
   }
+  .item-price-lessons {
+    max-width: calc((100% - 32px) / 2);
+    padding: 32px 16px;
+  }
   .secondary-title-lessons {
     font-size: 18px;
     margin-bottom: 64px;
-  }
-  .item-set-width {
-    max-width: calc((100% - 32px) / 2);
-    padding: 32px 16px;
   }
   .text-about-price-lessons {
     font-size: 16px;
@@ -132,16 +107,7 @@
     height: 132px;
     margin-bottom: 32px;
   }
-  .text-about-price-lessons-accent {
-    font-size: 16px;
-    max-width: 304px;
-    margin-bottom: 32px;
-    height: 132px;
-  }
   .price-text-lessons {
-    margin-bottom: 32px;
-  }
-  .price-text-lessons-accent {
     margin-bottom: 32px;
   }
   .link-toform-lessons {
@@ -149,16 +115,15 @@
     max-width: 304px;
     height: 60px;
   }
-  .link-toform-lessons-accent {
-    font-size: 18px;
-    max-width: 304px;
-    height: 60px;
-  }
 }
+/* DESKTOP///////////////// */
 @media screen and (min-width: 1280px) {
   .secondary-title-lessons {
     font-size: 18px;
     margin-bottom: 64px;
+    max-width: 665px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .list-price-lessons {
     flex-wrap: nowrap;
@@ -166,7 +131,7 @@
     align-items: center;
     gap: 32px;
   }
-  .item-set-width {
+  .item-price-lessons {
     max-width: calc((100% - 64px) / 3);
     padding: 32px;
   }
@@ -178,29 +143,10 @@
     max-width: 256px;
     margin-bottom: 32px;
   }
-  .text-about-price-lessons-accent {
-    font-size: 16px;
-    max-width: 256px;
-    margin-bottom: 32px;
-  }
-  .price-text-lessons-accent {
-    margin-bottom: 16px;
-  }
+
   .link-toform-lessons {
     font-size: 18px;
     max-width: 256px;
     height: 60px;
-  }
-  .link-toform-lessons:hover {
-    background-color: rgb(56, 174, 95);
-  }
-  .link-toform-lessons-accent {
-    font-size: 18px;
-    max-width: 256px;
-    height: 60px;
-  }
-  .link-toform-lessons-accent:hover {
-    background-color: var(--white);
-    color: var(--green);
   }
 }
