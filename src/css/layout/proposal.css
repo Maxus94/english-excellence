@@ -153,11 +153,24 @@
     line-height: 1.2;
     letter-spacing: -0.4px;
   }
-  .proposal-image {
+
+  .firts-rectangle::after {
+    content: '';
+    background-image: url('../../img/proposal/books1x.png');
     position: absolute;
+    width: 214px;
+    height: 223px;
+    background-repeat: no-repeat;
     right: 0;
     bottom: 63px;
     transform: translateX(49px);
+    background-size: 214px 223px;
+  }
+
+  @media screen and (min-resolution: 2dppx) {
+    .firts-rectangle::after {
+      background-image: url('../../img/proposal/books2x.png');
+    }
   }
   .proposal-link {
     color: var(--white);
@@ -213,11 +226,24 @@
     line-height: 1.2;
     letter-spacing: -0.4px;
   }
-  .proposal-image {
+  .firts-rectangle::after {
+    content: '';
+    background-image: url('../../img/proposal/books1x.png');
     position: absolute;
+    width: 214px;
+    height: 223px;
+    background-repeat: no-repeat;
     right: 0;
     bottom: 79px;
+    background-size: 214px 223px;
   }
+
+  @media screen and (min-resolution: 2dppx) {
+    .firts-rectangle::after {
+      background-image: url('../../img/proposal/books2x.png');
+    }
+  }
+
   .proposal-link {
     color: var(--white);
     font-size: 18px;
