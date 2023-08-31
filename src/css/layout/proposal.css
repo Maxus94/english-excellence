@@ -7,7 +7,7 @@
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .section-proposal {
     margin: 0 auto;
-    padding: 40px 20px 40px 20px;
+    padding: 0 20px 80px 20px;
     width: 375px;
   }
 }
@@ -113,7 +113,7 @@
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .section-proposal {
     margin: 0 auto;
-    padding: 50px 32px 50px 32px;
+    padding: 0 32px 100px 32px;
     width: 768px;
   }
 
@@ -189,7 +189,7 @@
 @media screen and (min-width: 1280px) {
   .section-proposal {
     margin: 0 auto;
-    padding: 75px 64px 75px 64px;
+    padding: 0 64px 150px 64px;
     width: 1280px;
   }
   .section-proposal-container {
