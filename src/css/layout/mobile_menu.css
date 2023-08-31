@@ -129,6 +129,7 @@ color: var(--green-light)
 .mobile-menu-social-link:hover .mobile-menu-social-icon,
 .mobile-menu-social-link:focus .mobile-menu-social-icon  {
     fill: var(--green-light);
+    animation: shake 1s;
 }
 
 @media screen and (min-width: 768px) {

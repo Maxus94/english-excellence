@@ -140,6 +140,7 @@
     .header-socials-link:hover .header-socials-icon,
     .header-socials-link:focus .header-socials-icon  {
         fill: var(--green);
+        animation: shake 1s;
     }
     
 
