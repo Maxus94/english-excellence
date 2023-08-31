@@ -56,6 +56,9 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+  .section-proposal-container {
+    overflow: hidden;
+  }
 }
 .main-title-margin {
   margin-bottom: 65px;

@@ -60,6 +60,7 @@ body {
   color: var(--white);
   font-size: 38px;
   line-height: 1.05;
+  font-weight: 700;
 }
 
 .main-title-accent {
@@ -81,5 +82,6 @@ body {
     color: var(--white);
     font-size: 60px;
     line-height: 1.05;
+    font-weight: 700;
   }
 }
