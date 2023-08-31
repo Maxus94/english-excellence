@@ -1,7 +1,3 @@
-/* body.no-scroll {
-  overflow: hidden;
-} */
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -84,6 +80,7 @@
 .policy-terms-list {
   padding: 0 0 0 20px;
   margin: 0;
+  list-style: decimal;
 }
 .policy-terms-list-item {
   margin-bottom: 8px;

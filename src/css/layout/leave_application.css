@@ -23,20 +23,6 @@
   }
 }
 
-.section-text {
-  color: rgba(18, 20, 23, 0.8);
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .section-text {
-    font-size: 18px;
-    line-height: 1.67;
-    margin-bottom: 64px;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .application-content-wrap {
     padding-left: 102px;
