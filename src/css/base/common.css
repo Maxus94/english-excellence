@@ -56,6 +56,16 @@ body {
   display: block;
 }
 
+.main-title {
+  color: var(--white);
+  font-size: 38px;
+  line-height: 1.05;
+}
+
+.main-title-accent {
+  color: var(--green-middle);
+}
+
 @media screen and (min-width: 768px) {
   .section-title {
     font-size: 40px;
@@ -66,5 +76,10 @@ body {
     margin-bottom: 64px;
     font-size: 18px;
     line-height: 1.67;
+  }
+  .main-title {
+    color: var(--white);
+    font-size: 60px;
+    line-height: 1.05;
   }
 }
