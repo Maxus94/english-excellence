@@ -1,3 +1,8 @@
+.teachers-section{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
 .teacher-name {
   margin-bottom: 8px;
   color: var(--black);
@@ -8,43 +13,54 @@
   letter-spacing: -0.02em;
 }
 
-.teacher-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.teacher-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.teacher-picture{
-    margin-bottom: 16px;    
+.teacher-picture {
+  margin-bottom: 16px;
 }
 
-.teacher-description{
-    text-align: center;
-    line-height: 1.71;
+.teacher-description {
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
 }
 
-.teachers-list{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+.teachers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-@media screen and (min-width: 768px){
-    .teachers-list{
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 32px;
+@media screen and (min-width: 768px) {
+    .teachers-section{
+        padding-top: 100px;
+        padding-bottom: 50px;
     }
-    .teacher-card{
-        width: calc((100% - 32px) / 2);
-    }   
+  
+    .teachers-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .teacher-card {
+    width: calc((100% - 32px) / 2);
+  }
 }
 
-@media screen and (min-width: 1280px){
-    .teachers-list{
-         flex-wrap: nowrap;        
+@media screen and (min-width: 1280px) {
+    .teachers-section{
+        padding-top: 150px;
+        padding-bottom: 75px;
     }
-    .teacher-card{
-        width: calc((100% - 32px) / 4);
-    }
+  
+    .teachers-list {
+    flex-wrap: nowrap;
+  }
+  .teacher-card {
+    width: calc((100% - 32px) / 4);
+  }
 }

@@ -8,7 +8,6 @@
     flex-direction: column;
     gap: 20px;
     counter-reset: item;
-    list-style-type: none;
     padding-left: 0;
     margin-bottom: 20px;
 }
@@ -48,13 +47,51 @@
     background-image: url(../../img/about_us/memoji.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 255px;
+    background-size: 255px ;
+}
+
+@media (min-resolution: 192dpi) {
+    .about-us-img {
+        background-image: url(../../img/about_us/memoji@2.png);
+    }
 }
 
 @media screen and (min-width: 768px) {
     
+    .about-us-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+        margin-bottom: 32px;
+    }
+
+    .about-us-item {
+        flex-basis: calc((100% - 32px) / 2);
+    }
+
+    .about-us-img {
+        height: 243px;
+    }
+
 }
 
 @media screen and (min-width: 1280px) {
+
+    .about-us-position {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+
+    }
+
+    .about-us-list {
+        margin-bottom: 0;
+    }
+
+    .about-us-img {
+        height: 362px;
+        width: 310px;
+        flex-shrink: 0;
+    }
 
 }
