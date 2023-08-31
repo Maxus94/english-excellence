@@ -1,7 +1,17 @@
-.section-proposal {
-  margin: 0 auto;
-  padding: 0 20px 80px 20px;
+@media screen and (max-width: 374px) {
+  .section-proposal {
+    margin: 0 auto;
+    padding: 0 20px 80px 20px;
+  }
 }
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .section-proposal {
+    margin: 0 auto;
+    padding: 0 20px 80px 20px;
+    width: 375px;
+  }
+}
+
 .section-proposal-container {
   padding: 40px 20px;
   border-radius: 16px;
@@ -44,18 +54,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .proposal-image {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
   .section-proposal-container {
     overflow: hidden;
   }
@@ -116,6 +114,7 @@
   .section-proposal {
     margin: 0 auto;
     padding: 0 32px 100px 32px;
+    width: 768px;
   }
 
   .section-proposal-container {
@@ -191,6 +190,7 @@
   .section-proposal {
     margin: 0 auto;
     padding: 0 64px 150px 64px;
+    width: 1280px;
   }
   .section-proposal-container {
     padding: 64px 64px 142px 64px;
