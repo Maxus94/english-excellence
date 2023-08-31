@@ -23,20 +23,6 @@
   }
 }
 
-.section-text {
-  color: rgba(18, 20, 23, 0.8);
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .section-text {
-    font-size: 18px;
-    line-height: 1.67;
-    margin-bottom: 64px;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .application-content-wrap {
     padding-left: 102px;
@@ -240,20 +226,14 @@
 .application-radio-btn:checked + .application-radio-label span::before {
   content: '';
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
   display: block;
   border-radius: 50%;
   background-color: var(--green);
-}
-
-@media screen and (min-width: 768px) {
-  .application-radio-btn:checked + .application-radio-label span::before {
-    top: 3px;
-    left: 3px;
-  }
 }
 
 .application-radio-label span {
