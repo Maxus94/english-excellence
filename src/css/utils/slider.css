@@ -10,7 +10,6 @@
 .itc-slider {
   position: relative;
   overflow: hidden;
-  padding-bottom: 36px;
 }
 
 .itc-slider-wrapper {
@@ -56,85 +55,52 @@
 .itc-slider-btn {
   position: absolute;
   top: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 50px;
-  color: #fff;
-  text-align: center;
-  background: rgb(0 0 0 / 20%);
-  border: none;
   transform: translateY(-50%);
-  cursor: pointer;
-}
-
-.itc-slider-btn-hide {
-  display: none;
+  border: none;
+  opacity: 0.5;
 }
 
 .itc-slider-btn-prev {
-  left: 0;
+  left: 1px;
+  & .scroll-down-icon {
+    transform: rotate(90deg);
+  }
 }
 
 .itc-slider-btn-next {
-  right: 0;
-}
-
-.itc-slider-btn:hover,
-.itc-slider-btn:focus {
-  color: #fff;
-  text-decoration: none;
-  background: rgb(0 0 0 / 30%);
-  outline: 0;
-}
-
-.itc-slider-btn::before {
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: transparent no-repeat center center;
-  background-size: 100% 100%;
-}
-
-.itc-slider-btn-prev::before {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-}
-
-.itc-slider-btn-next::before {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  right: 1px;
+  & .scroll-down-icon {
+    transform: rotate(270deg);
+  }
 }
 
 /* индикаторы */
 .itc-slider-indicators {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 15;
+  padding-top: 32px;
+  padding-bottom: 2px;
   display: flex;
+  column-gap: 16px;
   justify-content: center;
-  margin: 0 15%;
-  padding-left: 0;
   list-style: none;
 }
 
 .itc-slider-indicator {
-  flex: 0 1 auto;
-  box-sizing: content-box;
-  width: 30px;
-  height: 5px;
-  margin-right: 3px;
-  margin-left: 3px;
+  width: 12px;
+  height: 12px;
   text-indent: -999px;
-  background-color: #eee;
+  background-color: var(--green-light);
   background-clip: padding-box;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
+  border-radius: 50%;
   cursor: pointer;
+  transition: transform var(--transition-timing), background-color var(--transition-timing);
+}
+
+.itc-slider-indicator:hover,
+.itc-slider-indicator:focus {
+  background-color: var(--green);
 }
 
 .itc-slider-indicator-active {
-  background-color: #757575;
+  background-color: var(--green);
+  transform: scale(1.3);
 }
