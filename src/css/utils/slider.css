@@ -62,16 +62,18 @@
 
 .itc-slider-btn-prev {
   left: 1px;
-  & .scroll-down-icon {
-    transform: rotate(90deg);
-  }
 }
 
 .itc-slider-btn-next {
   right: 1px;
-  & .scroll-down-icon {
-    transform: rotate(270deg);
-  }
+}
+
+.itc-slider-btn-prev > .scroll-down-icon {
+  transform: rotate(90deg);
+}
+
+.itc-slider-btn-next > .scroll-down-icon {
+  transform: rotate(270deg);
 }
 
 /* индикаторы */
@@ -92,7 +94,8 @@
   background-clip: padding-box;
   border-radius: 50%;
   cursor: pointer;
-  transition: transform var(--transition-timing), background-color var(--transition-timing);
+  transition: transform var(--transition-timing),
+    background-color var(--transition-timing);
 }
 
 .itc-slider-indicator:hover,
