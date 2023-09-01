@@ -36,3 +36,22 @@
     height: 24px;
   }
 }
+
+.button-arrow.button-top-scroll {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 9999;
+  color: var(--white);
+  background-color: var(--green);
+  opacity: 0.5;
+  transition: opacity var(--transition-timing);
+
+  & > .scroll-down-icon {
+    transform: rotate(180deg);
+  }
+}
+
+.button-arrow.button-top-scroll:hover {
+  opacity: 1;
+}
