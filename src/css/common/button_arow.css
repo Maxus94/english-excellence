@@ -46,10 +46,10 @@
   background-color: var(--green);
   opacity: 0.5;
   transition: opacity var(--transition-timing);
+}
 
-  & > .scroll-down-icon {
-    transform: rotate(180deg);
-  }
+.button-arrow.button-top-scroll > .scroll-down-icon {
+  transform: rotate(180deg);
 }
 
 .button-arrow.button-top-scroll:hover {
