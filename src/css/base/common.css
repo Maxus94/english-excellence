@@ -93,13 +93,13 @@ body {
 }
 
 .button-scroll {
+  display: block;
   z-index: 9999;
   position: fixed;
   right: 30px;
   bottom: 30px;
-  width: 40px;
-  height: 40px;
-  color: var(--green);
+  width: 48px;
+  height: 48px;
   background-color: var(--green-light);
   border: none;
   border-radius: 50%;
@@ -112,6 +112,18 @@ body {
 .button-scroll:hover,
 .button-scroll:focus {
   background-color: #c3dfcc;
+}
+
+.button-scroll-icon {
+  fill: var(--green);
+  stroke: var(--green);
+  transform: rotate(180deg);
+}
+
+.button-scroll:hover .button-scroll-icon,
+.button-scroll:focus .button-scroll-icon {
+  fill: var(--white);
+  stroke: var(--white);
 }
 
 @keyframes shake {
