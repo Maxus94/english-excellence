@@ -311,3 +311,13 @@
   color: #38ae5f;
   outline: none;
 }
+@media screen and (max-width: 768px) {
+  .application-section .section-text {
+    margin-bottom: 20px;
+  }
+  .application-section .section-title {
+    margin-bottom: 14px;
+    font-weight: 600;
+    line-height: 1.13;
+  }
+}
