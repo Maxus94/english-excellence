@@ -126,12 +126,15 @@
   }
   .third-rectangle {
     transform: rotate(10.655deg);
+    border-radius: 30px;
   }
   .second-rectangle {
+    border-radius: 30px;
     transform: rotate(-9.864deg);
   }
 
   .firts-rectangle {
+    border-radius: 30px;
     padding: 64px 185px 64px 32px;
   }
 
@@ -214,14 +217,22 @@
     line-height: 1.17;
   }
   .third-rectangle {
-    transform: rotate(8deg);
+    width: 1011px;
+    height: 402px;
+    transform: translate(6px, 41px) rotate(11deg);
+    flex-shrink: 0;
+    border-radius: 30px;
   }
   .second-rectangle {
-    transform: rotate(-8deg);
+    border-radius: 30px;
+    width: 1050px;
+    height: 463px;
+    transform: translate(-23px, 4px) rotate(-8deg);
   }
 
   .firts-rectangle {
-    padding: 64px 306px 64px 64px;
+    padding: 64px 305px 64px 64px;
+    border-radius: 30px;
   }
   .main-title-margin {
     margin: 0 0 133px 0;
@@ -233,9 +244,7 @@
     font-size: 40px;
     line-height: 1.2;
     letter-spacing: -0.02em;
-    margin-bottom: 20px;
-    letter-spacing: -0.02em;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
   }
   .proposal-list-item::before {
     content: url('../../img/proposal/custom-marker-tablet-desktop.svg');
@@ -244,6 +253,7 @@
   }
   .proposal-list {
     display: flex;
+    gap: 16px;
     flex-direction: column;
     margin-bottom: 40px;
   }
