@@ -37,6 +37,18 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .application-section .section-title {
+    line-height: 1.13;
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+
+  .application-section .section-text {
+    margin-bottom: 20px;
+  }
+}
+
 .application-image-wrapper {
   border-radius: 30px;
   background: var(--green);
@@ -73,7 +85,7 @@
 
 @media screen and (min-width: 1280px) {
   .application-form {
-    width: 524px;
+    width: 500px;
   }
 }
 
@@ -90,6 +102,7 @@
   width: 100%;
   transition: border-color var(--transition-timing);
   color: var(--black);
+  font-size: 14px;
   line-height: 1.286;
 }
 
