@@ -13,7 +13,7 @@
 }
 
 .section-proposal-container {
-  padding: 40px 20px;
+  padding: 40px 20px 64px 20px;
   border-radius: 16px;
   background: var(--green-gradient);
 }
@@ -26,7 +26,7 @@
 
 .third-rectangle {
   position: absolute;
-  z-index: 100;
+  z-index: 1;
   width: 100%;
   height: 100%;
 
@@ -36,7 +36,7 @@
 }
 .second-rectangle {
   position: absolute;
-  z-index: 500;
+  z-index: 2;
   width: 100%;
   height: 100%;
   transform: rotate(-9deg);
@@ -48,7 +48,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 40px 20px;
-  z-index: 1000;
+  z-index: 3;
   border-radius: 16px;
   background: rgba(255, 255, 255, 1);
 }
@@ -116,11 +116,19 @@
     padding: 50px 32px 50px 32px;
     width: 768px;
   }
-
+  .section-proposal-container .main-title {
+    line-height: 1.17;
+  }
   .section-proposal-container {
     padding: 64px 18px 92px 18px;
-    border-radius: 16px;
+    border-radius: 30px;
     background: var(--green-gradient);
+  }
+  .third-rectangle {
+    transform: rotate(10.655deg);
+  }
+  .second-rectangle {
+    transform: rotate(-9.864deg);
   }
 
   .firts-rectangle {
@@ -155,18 +163,23 @@
     line-height: 1.2;
     letter-spacing: -0.4px;
   }
+  .proposal-list-item::before {
+    content: url('../../img/proposal/custom-marker-tablet-desktop.svg');
+    width: 28px;
+    height: 28px;
+  }
 
   .firts-rectangle::after {
     content: '';
     background-image: url('../../img/proposal/books1x.png');
     position: absolute;
     width: 214px;
-    height: 223px;
+    height: 263px;
     background-repeat: no-repeat;
     right: 0;
     bottom: 63px;
     transform: translateX(49px);
-    background-size: 214px 223px;
+    background-size: 214px 263px;
   }
 
   @media screen and (min-resolution: 2dppx) {
@@ -194,9 +207,19 @@
   }
   .section-proposal-container {
     padding: 64px 64px 142px 64px;
-    border-radius: 16px;
+    border-radius: 30px;
     background: var(--green-gradient);
   }
+  .section-proposal-container .main-title {
+    line-height: 1.17;
+  }
+  .third-rectangle {
+    transform: rotate(8deg);
+  }
+  .second-rectangle {
+    transform: rotate(-8deg);
+  }
+
   .firts-rectangle {
     padding: 64px 306px 64px 64px;
   }
@@ -213,6 +236,11 @@
     margin-bottom: 20px;
     letter-spacing: -0.02em;
     margin-bottom: 42px;
+  }
+  .proposal-list-item::before {
+    content: url('../../img/proposal/custom-marker-tablet-desktop.svg');
+    width: 28px;
+    height: 28px;
   }
   .proposal-list {
     display: flex;
@@ -234,11 +262,11 @@
     background-image: url('../../img/proposal/books1x.png');
     position: absolute;
     width: 214px;
-    height: 223px;
+    height: 263px;
     background-repeat: no-repeat;
     right: 0;
     bottom: 79px;
-    background-size: 214px 223px;
+    background-size: 214px 263px;
   }
 
   @media screen and (min-resolution: 2dppx) {

@@ -8,7 +8,7 @@
 }
 
 .section-our-lessons {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   padding-top: 40px;
 }
 .title-price-lessons {
@@ -89,7 +89,7 @@
 /* TABLET////////////////// */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .section-our-lessons {
-    padding-bottom: 100px;
+    padding-bottom: 75px;
     padding-top: 50px;
   }
   .list-price-lessons {
@@ -125,7 +125,7 @@
 /* DESKTOP///////////////// */
 @media screen and (min-width: 1280px) {
   .section-our-lessons {
-    padding-bottom: 150px;
+    padding-bottom: 75px;
     padding-top: 75px;
   }
   .secondary-title-lessons {
