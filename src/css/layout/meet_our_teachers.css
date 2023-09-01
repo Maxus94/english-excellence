@@ -20,9 +20,7 @@
 }
 
 .teacher-picture {
-  margin-bottom: 16px;
-  width: 150px;
-  height: 150px;
+  margin-bottom: 16px;  
 }
 
 .teacher-description {
@@ -51,6 +49,16 @@
   .teacher-card {
     width: calc((100% - 32px) / 2);
   }
+  .teacher-description {
+    font-size: 16px;    
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .teachers-list {
+    padding-left: 64px;
+    padding-right: 64px;
+  }  
 }
 
 @media screen and (min-width: 1280px) {
