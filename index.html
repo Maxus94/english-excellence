@@ -333,14 +333,26 @@
     </p>
     <div class="application-content-wrap">
       <div class="application-image-wrapper">
-        <img
-          class="application-image"
-          srcset="/english-excellence/assets/application-cbe42303.png 1x, /english-excellence/assets/application@2x-e5a326b9.png 2x"
-          src="/english-excellence/assets/application-cbe42303.png"
-          alt="Add an application"
-          width="492"
-          height="392"
-        />
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/english-excellence/assets/application-8b29958e.webp 1x, /english-excellence/assets/application@2x-b02839ad.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/english-excellence/assets/application-9b41d419.png 1x, /english-excellence/assets/application@2x-f08fcf71.png 2x"
+            type="image/png"
+          />
+          <img
+            class="application-image"
+            src="/english-excellence/assets/application-9b41d419.png"
+            alt="Girl learning"
+            loading="lazy"
+            width="492"
+            height="392"
+          />
+        </picture>
         <p class="application-image-title">1000</p>
         <p class="application-image-descr">
           of our online English language lessons! This journey has been full of
