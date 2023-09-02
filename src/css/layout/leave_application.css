@@ -209,6 +209,7 @@
 }
 
 .application-radio-label {
+  cursor: pointer;
   display: flex;
   gap: 8px;
   align-items: center;
