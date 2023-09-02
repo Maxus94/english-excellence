@@ -1,107 +1,112 @@
 .about-us {
-    padding-top: 80px;
-    padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .about-us-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    counter-reset: item;
-    padding-left: 0;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  counter-reset: item;
+  padding-left: 0;
+  margin-bottom: 20px;
 }
 
 .about-us-item-text {
-    margin-top: 16px;
-    color: var(--black);
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.33;
-    letter-spacing: -0.02em;
+  margin-top: 16px;
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
 }
 
 .about-us-item {
-    flex-basis: 100%;
-    padding: 32px;
-    border-radius: 16px;
-    background-color: var(--gray);
+  flex-basis: 100%;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: var(--gray);
 }
 
 .about-us-item::before {
-    content: counter(item, decimal-leading-zero);
-    counter-increment: item;
-    color: var(--green);
-    font-weight: 700;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: -0.02em;
+  content: counter(item, decimal-leading-zero);
+  counter-increment: item;
+  color: var(--green);
+  font-weight: 700;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
 }
 
 .about-us-img {
-    height: 313px;
-    width: 100%;
-    border-radius: 16px;
-    background-color: var(--green);
-    background-image: url(../../img/about_us/memoji.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 255px ;
+  height: 313px;
+  width: 100%;
+  border-radius: 16px;
+  background-color: var(--green);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 255px;
+  background-image: url(../../img/about_us/memoji.png);
+
+  @supports (background-image: url(../../img/about_us/memoji.webp)) {
+    background-image: url(../../img/about_us/memoji.webp);
+  }
 }
 
-@media (min-resolution: 192dpi) {
-    .about-us-img {
-        background-image: url(../../img/about_us/memoji@2.png);
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .about-us-img {
+    background-image: url(../../img/about_us/memoji@2x.png);
+
+    @supports (background-image: url(../../img/about_us/memoji@2x.webp)) {
+      background-image: url(../../img/about_us/memoji@2x.webp);
     }
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .about-us {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
 
-    .about-us {
-            padding-top: 100px;
-            padding-bottom: 50px;
-        }
-    
-    .about-us-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 32px;
-        margin-bottom: 32px;
-    }
+  .about-us-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
 
-    .about-us-item {
-        flex-basis: calc((100% - 32px) / 2);
-    }
+  .about-us-item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
 
-    .about-us-img {
-        height: 243px;
-    }
-
+  .about-us-img {
+    height: 243px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .about-us {
+    padding-top: 96px;
+    padding-bottom: 75px;
+  }
 
-    .about-us {
-            padding-top: 96px;
-            padding-bottom: 75px;
-        }
+  .about-us-position {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
 
-    .about-us-position {
-        display: flex;
-        gap: 32px;
-        align-items: center;
+  .about-us-list {
+    margin-bottom: 0;
+  }
 
-    }
-
-    .about-us-list {
-        margin-bottom: 0;
-    }
-
-    .about-us-img {
-        height: 362px;
-        width: 310px;
-        flex-shrink: 0;
-    }
-
+  .about-us-img {
+    height: 362px;
+    width: 310px;
+    flex-shrink: 0;
+  }
 }
