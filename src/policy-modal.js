@@ -1,12 +1,12 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-policy-modal-open]'),
-    closeModalBtn: document.querySelector('[data-policy-modal-close]'),
+    openModalButtons: document.querySelectorAll('[data-policy-modal-open]'),
+    closeModalButtons: document.querySelectorAll('[data-policy-modal-close]'),
     modal: document.querySelector('[data-policy-modal]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalButtons.forEach((element) => element.addEventListener('click', toggleModal));
+  refs.closeModalButtons.forEach((element) => element.addEventListener('click', toggleModal));
   refs.modal.addEventListener('click', closeModal);
 
   function closeModal(e) {

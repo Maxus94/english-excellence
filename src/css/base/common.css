@@ -2,21 +2,22 @@ html {
   overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-gutter: stable;
-  ::-webkit-scrollbar {
-    width: 5px;
-    background-color: var(--green-light);
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--green);
-    border-radius: 4px;
-  }
-
   scroll-behavior: smooth;
 }
 
+*::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--green-light);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 4px;
+}
+
 @media screen and (min-width: 768px) {
-  html {
+  * {
     ::-webkit-scrollbar {
       width: 10px;
     }

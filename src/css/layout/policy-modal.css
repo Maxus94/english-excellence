@@ -8,7 +8,8 @@
   z-index: 2000;
   transform: scale(1);
   transition: opacity var(--transition-timing),
-    visibility var(--transition-timing), transform var(--transition-timing);
+              visibility var(--transition-timing), 
+              transform var(--transition-timing);
 }
 
 .is-hidden {
@@ -21,14 +22,20 @@
 .policy-modal {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 999;
   width: 100%;
-  height: 100%;
   padding-top: 60px;
   padding-bottom: 20px;
   background-color: var(--green);
-  overflow: scroll;
+  overflow: hidden;
+}
+
+.scroll-container {
+  overflow: auto;
+  padding: 0 20px;
+  height: 100%;
 }
 
 .policy-modal.is-open {
@@ -90,4 +97,14 @@
 }
 .policy-terms-list-text {
   margin-bottom: 4px;
+}
+
+
+@media (min-width: 768px) {
+  .policy-modal {
+    border-radius: 12px;
+    max-width: 500px;
+    top: 10%;
+    height: 70vh;
+  }
 }
