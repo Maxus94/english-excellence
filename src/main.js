@@ -1,3 +1,4 @@
+import 'modern-normalize';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './js/burger_menu.js';
