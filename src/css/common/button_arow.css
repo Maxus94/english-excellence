@@ -44,7 +44,7 @@
   z-index: 9999;
   color: var(--white);
   background-color: var(--green);
-  opacity: 0.5 important; 
+  opacity: 0.5 !important; 
   transition: opacity var(--transition-timing);
 }
 
@@ -53,5 +53,5 @@
 }
 
 .button-arrow.button-top-scroll:hover {
-  opacity: 1;
+  opacity: 1 !important;
 }
