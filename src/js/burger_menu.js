@@ -1,3 +1,5 @@
+import { toggleModal, closeModal } from './utils.js';
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
@@ -11,7 +13,7 @@
   );
   // refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
+  refs.openModalBtn.addEventListener('click', e => toggleModal(e, refs));
+  refs.closeModalBtn.addEventListener('click', e => toggleModal(e, refs));
+  refs.modal.addEventListener('click', e => closeModal(e, refs));
 })();
