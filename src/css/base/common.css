@@ -20,15 +20,18 @@ html {
   overflow: hidden;
 }
 
+.no-scroll .button-top-scroll {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
-  * {
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
+  *::-webkit-scrollbar {
+    width: 10px;
   }
 }
 
 body {
+  position: relative;
   font-family: var(--main-font-family);
   color: var(--black-50-transparent);
   background-color: var(--white);

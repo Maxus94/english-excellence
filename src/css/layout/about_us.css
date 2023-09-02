@@ -56,9 +56,9 @@
   }
 }
 
-@media screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px),
-  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
   .about-us-img {
     background-image: url(../../img/about_us/memoji@2x.png);
   }
