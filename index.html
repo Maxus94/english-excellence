@@ -16,8 +16,8 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/english-excellence/assets/index-fb0f9a96.js"></script>
-    <link rel="stylesheet" href="/english-excellence/assets/index-46a3bbef.css">
+    <script type="module" crossorigin src="/english-excellence/assets/index-6846f1b7.js"></script>
+    <link rel="stylesheet" href="/english-excellence/assets/index-f9bbbc03.css">
   </head>
 
   <body>
@@ -34,6 +34,7 @@
             </ul>
         </nav>
         <button class="mobile-menu-open-btn" aria-expanded="false" aria-controls="mobile-menu" data-modal-open>
+            <span class="visually-hidden" >Open menu</span>
             <svg class="mobile-menu-open-btn-icon"  aria-label="Burger mobile menu btn">
                 <use href="/english-excellence/assets/icons-4a14624d.svg#icon-burger"></use>
             </svg>
@@ -88,7 +89,7 @@
 </section>
 
       <section id="about_us" class="about-us">
-  <div class="container">
+  <div class="container" id="trigger-right">
     <h2 class="section-title" data-aos="zoom-in-down" data-aos-duration="700">
       About <span class="section-title-accent">Us</span>
     </h2>
@@ -120,7 +121,7 @@
   </div>
 </section>
 
-      <section id="our_lessons" class="section-our-lessons">
+      <section id="our_lessons" class="section-our-lessons" >
   <div class="container">
     <h2 class="section-title" data-aos="zoom-in-down" data-aos-duration="700">
       Our <span class="section-title-accent">lessons</span>
@@ -796,7 +797,7 @@
     <div class="mobile-menu-backdrop is-hidden" data-modal>
     <div class="mobile-menu" id="mobile-menu">
         <button class="mobile-menu-close-btn" type="button" data-modal-close>
-            <svg class="close-mobile-menu-icon" aria-label="Modal window close icon">
+            <svg class="close-mobile-burger-menu-icon" aria-label="Modal window close icon">
                 <use href="/english-excellence/assets/icons-4a14624d.svg#icon-close"></use>
             </svg>
         </button>
@@ -1001,7 +1002,11 @@
   </div>
 </div>
 
-    <a href="#header" class="button-top-scroll button-arrow">
+    <a href="#header" class="button-top-scroll button-arrow" 
+data-aos="fade-left"
+data-aos-anchor="#trigger-right"
+data-aos-anchor-placement="top-center" 
+>
     <svg
       class="scroll-down-icon"
       width="20"
