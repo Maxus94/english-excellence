@@ -44,7 +44,7 @@
   z-index: 9999;
   color: var(--white);
   background-color: var(--green);
-  opacity: 0.5;
+  opacity: 0.5 important; 
   transition: opacity var(--transition-timing);
 }
 
