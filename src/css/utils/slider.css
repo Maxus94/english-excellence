@@ -9,7 +9,6 @@
 
 .itc-slider {
   position: relative;
-  overflow: hidden;
 }
 
 .itc-slider-wrapper {
@@ -57,15 +56,32 @@
   top: 50%;
   transform: translateY(-50%);
   border: none;
+  background-color: var(--green);
   opacity: 0.5;
+  color: var(--white);
+  transition: opacity var(--transition-timing);
+}
+
+.itc-slider-btn:hover {
+  opacity: 1;
 }
 
 .itc-slider-btn-prev {
-  left: 1px;
+  left: -20px;
 }
 
 .itc-slider-btn-next {
-  right: 1px;
+  right: -20px;
+}
+
+@media (min-width: 768px) {
+.itc-slider-btn-prev {
+    left: -32px;
+  }
+
+  .itc-slider-btn-next {
+    right: -32px;
+  }
 }
 
 .itc-slider-btn-prev > .scroll-down-icon {
