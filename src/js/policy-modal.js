@@ -16,7 +16,7 @@
   function closeModal(e) {
     if (e.code === 'Escape') {
       refs.modal.classList.add('is-hidden');
-      document.removeEventListener('keydown', closeModal);
+      window.removeEventListener('keydown', closeModal);
       toggleBodyScroll();
     }
     if (e.target === refs.modal) {
