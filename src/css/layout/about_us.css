@@ -48,8 +48,10 @@
   background-position: center center;
   background-size: 255px;
   background-image: url(../../img/about_us/memoji.png);
+}
 
-  @supports (background-image: url(../../img/about_us/memoji.webp)) {
+@supports (background-image: url(../../img/about_us/memoji.webp)) {
+  .about-us-img {
     background-image: url(../../img/about_us/memoji.webp);
   }
 }
@@ -59,8 +61,10 @@
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   .about-us-img {
     background-image: url(../../img/about_us/memoji@2x.png);
+  }
 
-    @supports (background-image: url(../../img/about_us/memoji@2x.webp)) {
+  @supports (background-image: url(../../img/about_us/memoji@2x.webp)) {
+    .about-us-img {
       background-image: url(../../img/about_us/memoji@2x.webp);
     }
   }

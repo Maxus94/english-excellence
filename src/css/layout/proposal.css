@@ -1,7 +1,7 @@
 @media screen and (max-width: 374px) {
   .container-proposal {
     margin: 0 auto;
-    padding: 40 20px 40px 20px;
+    padding: 40px 20px 40px 20px;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 767px) {
@@ -174,7 +174,7 @@
 
   .firts-rectangle::after {
     content: '';
-    background-image: url('../../img/proposal/books1x.png');
+    background-image: url(../../img/proposal/books.png);
     position: absolute;
     width: 214px;
     height: 263px;
@@ -185,11 +185,26 @@
     background-size: 214px 263px;
   }
 
-  @media screen and (min-resolution: 2dppx) {
+  @supports (background-image: url(../../img/proposal/books.webp)) {
     .firts-rectangle::after {
-      background-image: url('../../img/proposal/books2x.png');
+      background-image: url(../../img/proposal/books.webp);
     }
   }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .firts-rectangle::after {
+      background-image: url(../../img/proposal/books@2x.png);
+    }
+
+    @supports (background-image: url(../../img/proposal/books@2x.webp)) {
+      .firts-rectangle::after {
+        background-image: url(../../img/proposal/books@2x.webp);
+      }
+    }
+  }
+
   .proposal-link {
     color: var(--white);
     font-size: 18px;
@@ -269,7 +284,7 @@
   }
   .firts-rectangle::after {
     content: '';
-    background-image: url('../../img/proposal/books1x.png');
+    background-image: url('../../img/proposal/books.png');
     position: absolute;
     width: 214px;
     height: 263px;
@@ -279,9 +294,23 @@
     background-size: 214px 263px;
   }
 
-  @media screen and (min-resolution: 2dppx) {
+  @supports (background-image: url(../../img/proposal/books.webp)) {
     .firts-rectangle::after {
-      background-image: url('../../img/proposal/books2x.png');
+      background-image: url(../../img/proposal/books.webp);
+    }
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .firts-rectangle::after {
+      background-image: url(../../img/proposal/books@2x.png);
+    }
+
+    @supports (background-image: url(../../img/proposal/books@2x.webp)) {
+      .firts-rectangle::after {
+        background-image: url(../../img/proposal/books@2x.webp);
+      }
     }
   }
 
