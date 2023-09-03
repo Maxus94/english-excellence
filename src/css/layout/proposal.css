@@ -1,13 +1,19 @@
 @media screen and (max-width: 374px) {
+  .section-proposal {
+    padding: 40px 0 40px 0;
+  }
   .container-proposal {
     margin: 0 auto;
-    padding: 40px 20px 40px 20px;
+    padding: 0 20px 0 20px;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 767px) {
+  .section-proposal {
+    padding: 40px 0 40px 0;
+  }
   .container-proposal {
     margin: 0 auto;
-    padding: 40px 20px 40px 20px;
+    padding: 0 20px 0 20px;
     width: 375px;
   }
 }
@@ -111,9 +117,12 @@
   background-color: rgb(56, 174, 95);
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+  .section-proposal {
+    padding: 50px 0 50px 0;
+  }
   .container-proposal {
     margin: 0 auto;
-    padding: 50px 32px 50px 32px;
+    padding: 0 32px 0 32px;
     width: 768px;
   }
   .section-proposal-container .main-title {
@@ -218,9 +227,12 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .section-proposal {
+    padding: 75px 0 75px 0;
+  }
   .container-proposal {
     margin: 0 auto;
-    padding: 75px 64px 75px 64px;
+    padding: 0 64px 0 64px;
     width: 1280px;
   }
   .section-proposal-container {
