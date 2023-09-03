@@ -49,6 +49,24 @@
   }
 }
 
+.application-section .section-text {
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .application-section .section-text {
+    max-width: 586px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .application-section .section-text {
+    max-width: 709px;
+  }
+}
+
 .application-image-wrapper {
   border-radius: 30px;
   background: var(--green);
