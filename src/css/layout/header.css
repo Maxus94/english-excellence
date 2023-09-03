@@ -6,12 +6,15 @@
     display: none;
 }
 
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .logo {
