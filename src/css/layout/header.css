@@ -6,12 +6,15 @@
     display: none;
 }
 
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .logo {
@@ -40,10 +43,7 @@
                                         
 
 @media screen and (min-width: 768px) {
-    .mobile-menu-open-btn-icon {
-        width: 40px;
-        height: 28px;
-    }
+
 }
 
 
@@ -89,7 +89,7 @@
     .nav-link::after {
         content: "";
         display: block;
-        background-color: var(--green);
+        background-color: #4DC274;
         height: 2px;
         width: 37px;
         margin-top: 20px;
@@ -142,8 +142,7 @@
 
     .header-socials-link:hover .header-socials-icon,
     .header-socials-link:focus .header-socials-icon  {
-        fill: var(--green);
-        animation: shake 1s;
+        fill: #4DC274;
     }
     
 
