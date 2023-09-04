@@ -38,24 +38,31 @@ body {
 }
 
 @font-face {
-  font-family: 'Manrope';
-  src: local('Manrope'),
-    url(../../fonts/Manrope/Manrope-Regular.ttf) format('truetype');
   font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Manrope'),
+    url(../../fonts/Manrope/manrope-v14-latin-regular.woff2) format('woff2'),
+    url(../../fonts/Manrope/manrope-v14-latin-regular.ttf) format('truetype');
 }
 
 @font-face {
+  font-display: swap;
   font-family: 'Manrope';
+  font-style: normal;
   font-weight: 600;
   src: local('Manrope'),
-    url(../../fonts/Manrope/Manrope-SemiBold.ttf) format('truetype');
-  font-display: swap;
+    url(../../fonts/Manrope/manrope-v14-latin-600.woff2) format('woff2'),
+    url(../../fonts/Manrope/manrope-v14-latin-600.ttf) format('truetype');
 }
 
 @font-face {
+  font-display: swap;
   font-family: 'Manrope';
+  font-style: normal;
   font-weight: 700;
   src: local('Manrope'),
-    url(../../fonts/Manrope/Manrope-Bold.ttf) format('truetype');
-  font-display: swap;
+    url(../../fonts/Manrope/manrope-v14-latin-700.woff2) format('woff2'),
+    url(../../fonts/Manrope/manrope-v14-latin-700.ttf) format('truetype');
 }
