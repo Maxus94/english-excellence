@@ -92,9 +92,11 @@
 
   .about-us-item {
     flex-basis: calc((100% - 32px) / 2);
+    border-radius: 30px;
   }
 
   .about-us-img {
+    border-radius: 30px;
     height: 243px;
   }
 }
