@@ -65,9 +65,13 @@
     padding: 32px 32px 50px;
   }
 
+  .hero-container .main-title {
+    max-width: 488px;
+  }
+
   .hero-container {
     padding-top: 260px;
-    padding-right: 184px;
+    padding-right: 32px;
     padding-bottom: 295px;
     padding-left: 32px;
     border-radius: 30px;
@@ -121,9 +125,13 @@
     padding: 16px 64px 48px;
   }
 
+  .hero-container .main-title {
+    max-width: 564px;
+  }
+
   .hero-container {
     padding-top: 164px;
-    padding-right: 524px;
+    padding-right: 64px;
     padding-bottom: 163px;
     padding-left: 64px;
     background-image: linear-gradient(
