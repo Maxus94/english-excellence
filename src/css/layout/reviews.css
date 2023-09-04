@@ -52,8 +52,15 @@
     padding-top: 50px;
     padding-bottom: 100px;
   }
+
+  .reviews-section .section-text {
+    max-width: 647px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .reviews-item-wrapper {
     padding: 32px 16px 40px;
+    border-radius: 30px;
   }
 
   .reviews-item-header {
