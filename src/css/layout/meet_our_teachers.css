@@ -40,6 +40,12 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
+    .teachers-section .section-text {
+      max-width: 709px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   
     .teachers-list {
     flex-direction: row;
